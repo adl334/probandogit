@@ -38,7 +38,9 @@ h3 {
     font-size: 1.4rem;
     font-weight: 300;
 }
+
 /*FIN RESET*/
+
 .contenedor {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -47,40 +49,85 @@ h3 {
 .logo {
     width: 5em;
     height: auto;
+    }
+.nav-item a:hover {
+    color: azure !important; 
 }
 
-.portada {
-    background-image: url(/img/ba1.jpg);
-    background-size: cover;
+.nav-item a:active {
+    color: azure;
+
 }
-.bloque {
-    background-color: black;
+.portada-foto {
+    display: flex;
+    justify-content: end;
+    filter: brightness(25%);
 }
 .card-portada {
+    display: block;
+    align-items: end;
     background-color: transparent;
     border: transparent;
-    margin: 20rem 5rem 5rem 5rem;
+    margin: 50em 5em 5em 5em;
+    width: auto;
 }
+.botonera-portada {
+    display: block;
+    justify-content: end;
+}
+
+.btn-portada {
+    margin: 0.2rem;
+}
+
+/*ORADORES*/
 main {
     flex: center;
 }
 
-main h3 {
-    padding-top: 0;
-    margin-top: 0;
+/*POSTAL*/
+.img-postal {
+    background-size: cover;
+}
+.carta {
+    font-size: auto;
+}
+.con-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+    
+/*FORMULARIO*/
+.caja-form {
+    display: flex;
+    justify-content: center;
 }
 
-main p {
-    padding-top: 0;
-    margin-top: 0;
+.botonera {
+    align-content: center;
 }
-.txt-form {
-    padding: 0;
-    margin: 0;
+.caja3-form {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
 }
+.comentario {
+    color: darkgray;
+    font-size: 80%;
+    margin: 0%;
+    padding: 0%;
+}
+.btn-enviar {
+    display: flex;
+    justify-content: center;
+    color: rgb(213, 243, 204); 
+    background-color: rgb(123, 184, 88);
+    opacity: 85%;
+    margin: 1em;
+ }
+
+ /*FOOTER*/
 footer {
     background-color: rgb(49, 83, 114);
 }
-/*.orador {
-    margin-top: ;
-}*/
+
