@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" media="only screen and (min-width: 486px)" href="/js/tp-js/estilos.css">
+  <title>TP JS</title>
+</head>
+
+<body>
+
+  <nav class="bg-dark">
+    <div class="nav gap-2 text-light d-flex justify-content-between navegacion">
+      <p class="nav-item ">Conf Bs As</p>
+          <ul class="nav gap-2">
+            <li class="nav-item">
+             <a class="active" href="">La conferencia</a></li>
+            <li class="nav-item">
+             <a href="">Los oradores</a></li>
+            <li class="nav-item">
+             <a href="">El lugar y la fecha</a></li>
+            <li class="nav-item">
+             <a href="">Conviértete en orador</a></li>
+            <li class="nav-item">
+             <a href="">Comprar tickets</a></li>
+          </ul>
+    </div>
+  </nav>
+
+  <section class="contenedor justify-content-center">
+    <div class="container">
+      <div class="row gap-2">
+        <div class="card border-primary mb-3  text-center" style="max-width: 18rem;">
+          <div class="card-header text-primary">ESTUDIANTE</div>
+          <div class="card-body text-primary">
+            <h3 class="card-title">Tiene un descuento del</h3>
+            <h4 class="card-text">80%</h4>
+            <p class="text-tertiary">*presentar documentación</p>
+          </div>
+        </div>
+
+        <div class="card border-warning mb-3 text-center" style="max-width: 18rem;">
+          <div class="card-header text-warning">TRAINEE</div>
+          <div class="card-body text-warning">
+            <h3 class="card-title">Tiene un descuento del</h3>
+            <h4 class="card-title">50%</h4>
+            <P class="card-text">*presentar documentación</P>
+          </div>
+        </div>
+
+        <div class="card border-info mb-3 text-center" style="max-width: 18rem;">
+          <div class="card-header text-info">JUNIOR</div>
+          <div class="card-body text-info">
+            <h3 class="card-title">Tiene un descuento del</h3>
+            <h4 class="card-title">15%</h4>
+            <P class="card-text">*presentar documentación</P>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="text-center contenedor justify-content-center">
+      <div>
+        <h4>VENTA</h4>
+        <h1>VALOR DE TICKET $200</h1>
+      </div>
+<div>
+      <div class="col-8 justify-content-center">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Nombre</span>
+          <input id="nombre" type="text" class="form-control" placeholder="Escribe tu nombre" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+        <p id="errorNombre" class="oculto"></p>
+        
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Apellido</span>
+          <input id="apellido" type="text" class="form-control" placeholder="Escribe tu apellido" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+        <p id="errorApellido" class="oculto"></p>
+
+
+        <div class="input-group mb-3">
+          <input id="email" type="text" class="form-control" placeholder="Escribe tu correo electrónico"
+            aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">Ejemplo: tucorreo@example.com</span>
+        </div>
+        <p id="errorCorreo" class="oculto"></p>
+
+
+      </div>
+      <div class="col-8 d-flex justify-content-center gx-1">
+      <div class="col-md">
+        <div class="form-floating col-4">
+            <select id="cantidad" class="form-select" id="floatingSelectGrid">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label for="floatingSelectGrid">Cantidad</label>
+          </div>
+          <div class="col-md">
+            <div class="form-floating col-4">
+              <select id="categoria" class="form-select" id="floatingSelectGrid">
+                <option value="general">General</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="placeholder col-12 bg-info d-block">
+        <span class="text-center">Total a pagar $<span id="precioTotal"></span></span>
+      </div>
+      <div class="d-grid gap-2 col-4 mx-auto contenedor">
+        <a href="#" class="btn btn-success active d-inline" role="button" data-bs-toggle="button" aria-pressed="true">Borrar</a>
+        <button href="#" class="btn btn-success active d-inline" id="resumen" role="button" data-bs-toggle="button" aria-pressed="true">Resumen</button>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-secondary">
+    <div class="container">
+      <ul class="nav gap-4 col-row justify-content-center">
+        <li class="nav-item">
+          <a href="">Preguntas frecuentes</a></li>
+        <li class="nav-item">
+         <a href="">Contáctanos</a></li>
+        <li class="nav-item">
+         <a href="">Prensa</a></li>
+        <li class="nav-item">
+         <a href="">Conferencias</a></li>
+        <li class="nav-item">
+         <a href="">Términos y condiciones</a></li>
+        <li class="nav-item">
+         <a href="">Privacidad</a></li>
+        <li class="nav-item">
+         <a href="">Estudiantes</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="/js/tp-js/script.js"></script>
+</body>
+
+</html>
